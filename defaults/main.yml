@@ -1,0 +1,12 @@
+---
+### Download
+terragrunt_version: latest
+terragrunt_pkg_name: "terragrunt_linux_amd64"
+terragrunt_install_force: false
+terragrunt_install_origin: "internet" # or local
+
+### Install
+# if terragrunt_install_origin: local
+terragrunt_local_files: "~/Downloads/shared-files/{{ role_path | basename }}/{{ terragrunt_pkg_name }}"
+terragrunt_install_dir: "/usr/local/bin"
+terragrunt_bin_name: "terragrunt"
